@@ -3,7 +3,97 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
 <MainLayout title="Titel">
-	<article>
-		<p>Index indhold</p>
-	</article>
+	<!-- Hero unit -->
+	<section>
+		<article>
+			<h1>Hero unit</h1>
+		</article>
+	</section>
+
+	<!-- Sektion 1 - Hvad er digitalt skrald -->
+	<section>
+		<article>
+			<h1>Hvad er digitalt skrald?</h1>
+		</article>
+	</section>
+
+	<!-- Sektion 2 - Problemet med digitalt skrald -->
+	<section>
+		<article>
+			<h1>Problemet med digitalt skrald</h1>
+		</article>
+	</section>
+
+	<!-- Sektion 3 - Did you know? -->
+	<section>
+		<article>
+			<h1>Vidste du?</h1>
+		</article>
+	</section>
+
+	<!-- Sektion 4 - How to? -->
+	<section>
+		<article>
+			<h1>Hvordan?</h1>
+		</article>
+	</section>
+
+	<!-- Sektion 5 - Hvor meget er slettet? -->
+	<section>
+		<article>
+			<h1>Hvor meget er slettet?</h1>
+		</article>
+	</section>
+
+	<!-- Formular -->
+	<form class="">
+
+		<div class="">
+			<label for="antal">Antal:</label>
+			<input class="" type="number" id="antal" name="antal" placeholder="1">
+		</div>
+
+		<div class="">
+			<span>Levering:</span>
+			<input type="radio" id="postnord" name="levering">
+			<label for="postnord" checked="checked">PostNord</label>
+			<input type="radio" id="afhent" name="levering">
+			<label for="afhent">Afhent selv</label>
+		</div>
+	
+		<div class="grid gap-3">
+			<label for="navn">Navn:</label>
+			<input class="" type="text" id="navn" name="navn" placeholder="Anders And">
+		</div>
+
+		<div class="grid gap-3">
+			<label for="adresse">Adresse:</label>
+			<input class="" type="text" id="adresse" name="adresse" placeholder="Paradisæblevej 8">
+		</div>
+
+		<div class="grid gap-3">
+			<label for="email">Antal:</label>
+			<input class="" type="email" id="email" name="email" placeholder="anders@andeby.dk">
+		</div>
+
+		<div class="grid gap-3 grid-cols-6">
+			<label for="postnummer" class="col-span-6">Postnummer & by:</label>
+			<input class="" type="text" id="postnummer" name="postnummer" class="col-span-2" placeholder="0900">
+			<input class="" type="text" id="bynavn" name="bynavn" disabled class="col-span-4" placeholder="Andeby C">
+		</div>
+
+		<div class="grid gap-3">
+			<label for="telefon">Telefon:</label>
+			<input class="" type="tel" id="telefon" name="telefon" placeholder="555-555">
+		</div>
+
+		<div class="">
+			<input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+			<label for="nyhedsbrev">Ja tak til nyhedsbreve og tilbud</label>
+		</div>
+
+		<div class="flex justify-end">
+			<Button variant="primary" size="medium">Til betaling</Button>
+		</div>
+	</form>
 </MainLayout>
