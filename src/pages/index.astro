@@ -46,15 +46,26 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Sektion 2 - Problemet med digitalt skrald -->
-	<section id="sektion2">
+	<section id="sektion2" class="bg-[#9EB384] p-4">
 		<article>
-			<h1>Problemet med digitalt skrald</h1>
+			<h1 class="text-[#FAF1E4] text-5xl font-['Spectral'] font-semibold text-center p-4 mt-8">Problemet med digitalt skrald</h1>
 
-			<p>Hvert år producerer internettet og dets støttesystemer mere end 900 millioner tons CO2.</p>
+			<div class="grid lg:grid-cols-3 gap-4 m-10 p-4">
+				<div class="flex flex-col p-4">
+					<img class="w-64 h-64 p-4 mx-auto" src="/Figur1.png" alt="">
+					<p class="text-center m-4">Hvert år producerer internettet og dets støttesystemer mere end 900 millioner tons CO2.</p>
+				</div>
+			
+				<div class="flex flex-col p-4">
+					<img class="p-4 mx-auto" src="/Figur2.png" alt="">
+					<p class="text-center m-4 mt-0">De globale CO2-emissioner relateret til energi steg i 2022 med 0,9%, og nåede et nyt højdepunkt på mere end 36,8 milliarder ton. Ifølge visse beregninger udgør internetbrug 3,7% af de globale emissioner, hvilket svarer til al lufttrafik i verden. Og dette tal forventes at fordoble sig inden 2025.</p>
+				</div>
 
-			<p>De globale CO2-emissioner relateret til energi steg i 2022 med 0,9%, og nåede et nyt højdepunkt på mere end 36,8 milliarder ton. Ifølge visse beregninger udgør internetbrug 3,7% af de globale emissioner, hvilket svarer til al lufttrafik i verden. Og dette tal forventes at fordoble sig inden 2025.</p>
-
-			<p>Nogle studier skønner, at internetnetværket vil forbruge 20 procent af verdens samlede energi inden 2030.</p>
+				<div class="flex flex-col p-4">
+					<img class="w-auto h-64 p-4 mx-auto" src="Figur3.png" alt="">
+					<p class="text-center m-4">Nogle studier skønner, at internetnetværket vil forbruge 20 procent af verdens samlede energi inden 2030.</p>
+				</div>
+			</div>
 		</article>
 	</section>
 
