@@ -36,11 +36,11 @@ import Button from '../components/Button.astro';
 	<section id="sektion1" class="bg-[#CEDEBD] p-4 pt-24 pb-24">
 		<article class=" lg:grid grid-cols-2" >
 			<div>
-			<h1 class="text-[#CF5138] font-['Spectral'] text-8xl font-semibold ml-28 lg:ml-48  mt-10 mb-10">Hvad er digitalt skrald?</h1>
+			<h1 class="text-[#CF5138] font-['Spectral'] text-8xl font-semibold uppercase ml-28 lg:ml-48  mt-10 mb-10">Hvad er digitalt skrald?</h1>
 		</div>
 		<div class=" mr-12 mt-10 text-[#435334] ml-28 lg:-ml-0 lg:mr-48" >
-			<p class="mt-11">Digitalt skrald refererer til unødvendige eller uønskede filer, data eller informationer, der optager plads på elektroniske enheder som computere, smartphones eller tablets. </p> 
-			<p class="mt-4">Dette kan inkludere midlertidige internetfiler, ubrugte applikationer, spam-e-mails, duplikatfiler og lignende. Digitalt skrald kan forringe enhedens ydeevne og forbruge unødvendig lagerplads, og det er derfor vigtigt at rydde op i det regelmæssigt for at forbedre enhedens effektivitet og sikkerhed.</p>
+			<p class="mt-11 ml-10 mr-10">Digitalt skrald refererer til unødvendige eller uønskede filer, data eller informationer, der optager plads på elektroniske enheder som computere, smartphones eller tablets. </p> 
+			<p class="mt-4 ml-10 mr-10">Dette kan inkludere midlertidige internetfiler, ubrugte applikationer, spam-e-mails, duplikatfiler og lignende. Digitalt skrald kan forringe enhedens ydeevne og forbruge unødvendig lagerplads, og det er derfor vigtigt at rydde op i det regelmæssigt for at forbedre enhedens effektivitet og sikkerhed.</p>
 		</div>
 		</article>
 	</section>
@@ -48,7 +48,7 @@ import Button from '../components/Button.astro';
 	<!-- Sektion 2 - Problemet med digitalt skrald -->
 	<section id="sektion2" class="bg-[#9EB384] p-4">
 		<article>
-			<h1 class="text-[#FAF1E4] text-5xl font-['Spectral'] font-semibold text-center p-4 mt-8">Problemet med digitalt skrald</h1>
+			<h1 class="text-[#FAF1E4] text-5xl font-['Spectral'] font-semibold uppercase text-center p-4 mt-8">Problemet med digitalt skrald</h1>
 
 			<div class="grid lg:grid-cols-3 gap-4 m-10 p-4">
 				<div class="flex flex-col p-4">
@@ -73,7 +73,7 @@ import Button from '../components/Button.astro';
 	<section id="sektion3" class="bg-[#FAF1E4] pt-24 pb-24">
 		<article class=" ml-20 mr-20 lg:grid grid-cols-3 gap-4 lg:ml-48 lg:mr-48" >
 		
-<div class="border-solid border-2 border-[#CF5138] rounded-2xl p-6 grid place-content-center">
+<div class="border-solid border-2 border-[#CF5138] rounded-2xl p-6 grid place-content-center mx-auto">
 			<p class="text-[#435334]">Hvis 70 millioner streaming-abonnenter sænkede videoopløsningen på deres streamingtjenester fra HD til Standard, ville der være en månedlig reduktion på 3,5 millioner tons CO2 - svarende til at eliminere 6% af den samlede månedlige kulforbrug i USA.</p>
 		</div>
 		<div class="border-solid border-2 border-[#CF5138] rounded-2xl p-6 lg:mb-16 grid place-content-center mt-4 lg:mt-0">
@@ -85,7 +85,7 @@ import Button from '../components/Button.astro';
 		
 		
 		<div class="col-span-3 p-6">
-			<h1 class="text-[#CF5138] font-['Spectral'] text-8xl font-semibold grid place-items-center pt-2">Vidste du det?</h1>
+			<h1 class="text-[#CF5138] font-['Spectral'] text-8xl font-semibold uppercase grid place-items-center pt-2">Vidste du det?</h1>
 		</div>
 		<div class="border-solid border-2 border-[#CF5138] rounded-2xl p-6 grid place-content-center">
 			<p class="text-[#435334]">Google bruger 15.616 MWh energi hver dag, dette er mere end Hoover Dam producerer, og det ville forsyne et helt land med 1 million indbyggere med strøm i en dag.</p>
@@ -105,13 +105,14 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Sektion 4 - How to? -->
-	<section id="sektion4" class="bg-[#9EB384] pt-24 pb-24">
+	<section id="sektion4" class="flex flex-col justify-center items-center bg-[#9EB384] pt-24 pb-24">
+		<!-- <section id="sektion4" class="bg-[#9EB384] pt-24 pb-24"> -->
 			<div class="lg:ml-48 lg:mr-48">
-			<h1 class="text-[#FAF1E4] font-['Spectral'] text-8xl font-semibold mb-10 text-center ">Digital CleanUp</h1>
+			<h1 class="text-[#FAF1E4] font-['Spectral'] text-5xl font-semibold mb-10 text-center uppercase">Lav en Digital CleanUp</h1>
 		</div>
-		<article class="lg:grid grid-cols-2 gap--4  ml-20 mr-20 lg:ml-48 lg:mr-48 ">
+		<article class="flex flex-wrap justify-center items-start gap-8">
 			<div>
-		<div class="bg-[#435334] rounded-full box-content h-28 w-96 ">
+		<div class="bg-[#435334] rounded-full box-content h-28 w-96">
 			<h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7">TRIN 1</h2>
 			<p class="text-[#FAF1E4] grid place-content-center ">RYD OP PÅ DIN SMARTPHONE</p>
 		</div>
@@ -154,7 +155,7 @@ import Button from '../components/Button.astro';
 	<!-- Sektion 5 - Hvor meget er slettet? -->
 	<section class="bg-[#CEDEBD] p-4 pt-24 pb-24">
 		<div class="lg:ml-48 lg:mr-48">
-		<h1 class="text-[#CF5138] font-['Spectral'] text-8xl font-semibold">Hvordan ved jeg, hvor meget jeg har slettet?</h1>
+		<h1 class="text-[#CF5138] font-['Spectral'] text-5xl font-semibold uppercase">Hvordan ved jeg, hvor meget jeg har slettet?</h1>
 
 			<h2 class="text-[#435334] font-['Spectral'] font-semibold text-3xl lg:mt-16 uppercase ">Sletning af emails</h2>
 			<div class="h-0.5 bg-[#435334] mb-10"></div>
@@ -261,7 +262,7 @@ import Button from '../components/Button.astro';
 		<div class="border-solid border-2 border-[#435334] rounded-2xl p-12 mt-4">
 			<p class="text-[#435334]"><a class="text-[#CF5138]">5. Gå tilbage til den oprindelige lagerstørrelse på din telefon</a> - se det nummer, du skrev ned i begyndelsen, og tjek derefter den aktuelle størrelse og lav beregningerne - hvor mange GB formåede du at slette?</p>
 		</div>
-		<div class="border-solid border-2 border-[#435334] rounded-2xl p-14 mt-4">
+		<div class="border-solid border-2 border-[#435334] rounded-2xl p-8 mt-4">
 			<p class="text-[#435334]"><a class="text-[#CF5138]">6. Til sidst</a>, gå tilbage til vores kampagneside og udfyld antallet af slettede gigabyte. Hvis du vil fortsætte med at rydde op, kan du deltage igen og udfylde de nye tal.</p>
 		</div>
 		</article>
@@ -271,45 +272,45 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Formular -->
-	
 	<form id="sektion7" class="bg-[#9EB384] pt-24 pb-24">
 		
 <div class="lg:ml-48 lg:mr-48">
-	<h1 class="text-[#FAF1E4] font-['Spectral'] text-8xl font-semibold">Registrer dit digitale cleanup</h1>
-		<div class="grid gap-3 mt-20">
+	<h1 class="text-[#FAF1E4] font-['Spectral'] text-5xl font-semibold uppercase mx-auto max-w-2xl">Registrer dit digitale cleanup</h1>
+		<div class="grid gap-3 mt-20 mx-auto max-w-2xl">
 			<label class="text-[#435334] text-2xl font-['Spectral'] font-semibold" for="fornavn">Fornavn:</label>
 			<input class="border-solid border-2 border-[#435334] rounded-2xl bg-[#9EB384]"  class="" type="text" id="fornavn" name="fornavn">
 		</div>
 
-		<div class="grid gap-3 mt-12">
+		<div class="grid gap-3 mt-12 mx-auto max-w-2xl">
 			<label class="text-[#435334] text-2xl font-['Spectral'] font-semibold" for="efternavn">Efternavn:</label>
 			<input class="border-solid border-2 border-[#435334] rounded-2xl bg-[#9EB384]"  type="text" id="efternavn" name="efternavn">
 		</div>
 
-		<div class="grid gap-3 mt-12">
+		<div class="grid gap-3 mt-12 mx-auto max-w-2xl">
 			<label class="text-[#435334] text-2xl font-['Spectral'] font-semibold" for="email">Antal:</label>
 			<input class="border-solid border-2 border-[#435334] rounded-2xl bg-[#9EB384]"  type="email" id="email" name="email">
 		</div>
 
-		<div class="grid gap-3 mt-12">
+		<div class="grid gap-3 mt-12 mx-auto max-w-2xl">
 			<label class="text-[#435334] text-2xl font-['Spectral'] font-semibold" for="organisationsnavn" class="col-span-6">Organisationsnavn:</label>
 			<input  class="border-solid border-2 border-[#435334] rounded-2xl bg-[#9EB384]" type="text" id="organisationsnavn" name="organisationsnavn" class="col-span-2">
 		</div>
 
-		<div class="grid gap-3 mt-12">
+		<div class="grid gap-3 mt-12 mx-auto max-w-2xl">
 			<label class="text-[#435334] text-2xl font-['Spectral'] font-semibold" for="antal">Antal:</label>
 			<input class="border-solid border-2 border-[#435334] rounded-2xl bg-[#9EB384]"  type="text" id="antal" name="antal">
 		</div>
-<div>
-	<p class="text-[#435334] mt-4">Totalt slettede 8.511.463 gigabyte og sparede 2.127.865 kilo CO₂ om året</p>
-</div>
 
-		<div class="mt-4">
+		<div class="mx-auto max-w-2xl">
+			<p class="text-[#435334] mt-4">Totalt slettede 8.511.463 gigabyte og sparede 2.127.865 kilo CO₂ om året</p>
+		</div>
+
+		<div class="mt-4 mx-auto max-w-2xl">
 			<input class="border-solid border-2 border-[#435334] rounded-xl bg-[#9EB384]"  type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
 			<label class="text-[#435334]" for="nyhedsbrev">* I agree with Let’s Do It, World Terms and Conditions</label>
 		</div>
 
-		<div class="mt-4">
+		<div class="mt-4 mx-auto max-w-2xl">
 			<input class="border-solid border-2 border-[#435334] rounded-xl bg-[#9EB384]"  type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
 			<label class="text-[#435334]" for="nyhedsbrev">I want to sign up for news from World Cleanup Day</label>
 		</div>
