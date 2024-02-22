@@ -10,30 +10,26 @@ import Button from '../components/Button.astro';
 
 			<div class="flex justify-center items-center">
 				<div class="relative inline-block">
-				  <div class="absolute inset-0 border-2 border-[#435334] w-96 mx-auto"></div>
+				  <div class="absolute inset-0 border-2 border-[#435334] w-96 mx-auto fokus"></div>
 
-				  <h1 class="text-[#CF5138] text-3xl lg:text-8xl font-['Spectral'] font-semibold text-center relative">Digital CleanUp Day</h1>
+				  <h1 class="text-[#CF5138] text-3xl lg:text-8xl font-['Spectral'] font-semibold text-center relative fade1">Digital CleanUp Day</h1>
 				  
-				  <img class="rounded-full relative lg:max-w-2xl h-auto mt-8 mb-8 mx-auto" src="/Billede1.webp" alt="">
+				  <img class="rounded-full relative lg:max-w-2xl h-auto mt-8 mb-8 mx-auto fade2" src="/Billede1.webp" alt="">
 				</div>
 			  </div>
 
 			<div class="relative flex justify-center items-center mx-6 my-8">
 				<div class="absolute h-0.5 bg-[#435334] w-full"></div>
-			  
-				<h2 class="relative z-10 text-[#FAF1E4] lg:text-4xl font-['Spectral'] bg-[#435334] rounded-full inline-block text-center p-4">
-				  16 marts 2024
-				</h2>
+
+				<h2 class="relative z-10 text-[#FAF1E4] lg:text-4xl font-['Spectral'] bg-[#435334] rounded-full inline-block text-center p-4 fade3">16 marts 2024</h2>
 			
-				<h2 class="relative z-10 text-[#435334] lg:text-4xl font-['Spectral'] bg-[#FAF1E4] border border-[#435334] rounded-full inline-block text-center p-4 ml-4">
-				  Gem datoen!
-				</h2>
+				<h2 class="relative z-10 text-[#435334] lg:text-4xl  font-['Spectral'] bg-[#FAF1E4] border border-[#435334] rounded-full inline-block text-center p-4 ml-4 fade3">Gem datoen!</h2>
 			  </div>
 		</article>
 	</section>
 
 	<!-- Sektion 1 - Hvad er digitalt skrald -->
-	<section id="sektion1" class="bg-[#CEDEBD] p-4 pt-24 pb-24">
+	<section id="sektion1" class="bg-[#CEDEBD] p-4 pt-24 pb-24 fade">
 		<article class=" lg:grid grid-cols-2" >
 			<div>
 			<h1 class="text-[#CF5138] font-['Spectral'] text-4xl lg:text-8xl font-semibold uppercase lg:ml-48 ml-5 lg:mt-10 mb-10">Hvad er digitalt skrald?</h1>
@@ -46,7 +42,7 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Sektion 2 - Problemet med digitalt skrald -->
-	<section id="sektion2" class="bg-[#9EB384] p-4">
+	<section id="sektion2" class="bg-[#9EB384] p-4 fade">
 		<article>
 			<h1 class="text-[#FAF1E4] text-4xl lg:text-5xl font-['Spectral'] font-semibold uppercase text-center p-4 mt-8">Problemet med digitalt skrald</h1>
 
@@ -70,9 +66,9 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Sektion 3 - Did you know? -->
-	<section id="sektion3" class="bg-[#FAF1E4] pt-24 pb-24">
-		<article class=" ml-8 mr-8 lg:grid grid-cols-3 gap-4 lg:ml-48 lg:mr-48" >
-		
+	<section id="sektion3" class="bg-[#FAF1E4] pt-24 pb-24 fade">
+		<article class=" ml-20 mr-20 lg:grid grid-cols-3 gap-4 lg:ml-48 lg:mr-48" >
+
 <div class="border-solid border-2 border-[#CF5138] rounded-2xl p-6 grid place-content-center mx-auto">
 			<p class="text-[#435334]">Hvis 70 millioner streaming-abonnenter sænkede videoopløsningen på deres streamingtjenester fra HD til Standard, ville der være en månedlig reduktion på 3,5 millioner tons CO2 - svarende til at eliminere 6% af den samlede månedlige kulforbrug i USA.</p>
 		</div>
@@ -82,7 +78,6 @@ import Button from '../components/Button.astro';
 		<div class="border-solid border-2 border-[#CF5138] rounded-2xl p-6 grid place-content-center mt-4 lg:mt-0">
 			<p class="text-[#435334]">Hver dag svirrer 281 milliarder e-mails rundt om vores planet. Opdatering, læsning og svar på vores arbejds-e-mails tager mere end 3 timer om dagen, 5 hvis du inkluderer personlige e-mailkonti. Det kan tage mere end 23% af vores arbejdsdag, mere end 20 uger om året. At organisere dine e-mails, sende færre af dem og bruge alternative kommunikationsmetoder som fælles arbejdsområder ville frigøre den tid, men også begrænse den ineffektive praksis med at organisere arbejde gennem e-mails.</p>
 		</div>
-		
 		
 		<div class="col-span-3 p-6">
 			<h1 class="text-[#CF5138] font-['Spectral'] text-4xl lg:text-8xl font-semibold uppercase grid place-items-center pt-2">Vidste du det?</h1>
@@ -104,55 +99,63 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Sektion 4 - How to? -->
-	<section id="sektion4" class="flex flex-col justify-center items-center bg-[#9EB384] pt-24 pb-24">
-		<!-- <section id="sektion4" class="bg-[#9EB384] pt-24 pb-24"> -->
-			<div class="lg:ml-48 lg:mr-48">
-			<h1 class="text-[#FAF1E4] font-['Spectral'] text-5xl font-semibold mb-10 text-center uppercase">Lav en Digital CleanUp</h1>
-		</div>
+	<section id="sektion4" class="flex flex-col justify-center items-center bg-[#9EB384] py-24 fade">
+			<div class="w-full max-w-4xl mx-auto px-4">
+			<h1 class="text-[#FAF1E4] font-['Spectral'] text-5xl font-semibold mb-10 text-center uppercase">Lav en Digital CleanUp<h1>
+
 		<article class="flex flex-wrap justify-center items-start gap-8">
-			<div>
-		<div class="bg-[#435334] rounded-full box-content h-28 w-96">
-			<h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7">TRIN 1</h2>
-			<p class="text-[#FAF1E4] grid place-content-center ">RYD OP PÅ DIN SMARTPHONE</p>
-		</div>
-		<!-- <div>
-			<p>Fjern alle applikationer, som du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte gamle apps og spil, som du har downloadet, men endnu ikke har prøvet rigtigt. Du vil ikke begynde at bruge dem senere - det er sikkert! De forbruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabyte data om måneden til opdateringer.</p>
+			<div x-data="{ open: false }">
+				<div @click="open = !open" :class="open ? 'rounded-t-full' : 'rounded-full'" class="cursor-pointer bg-[#435334] h-28 w-96 transition-all">
+				  <h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7 glow">TRIN 1</h2>
+				  <p class="text-[#FAF1E4] grid place-content-center">RYD OP PÅ DIN SMARTPHONE</p>
+				</div>
+				<div x-show="open" x-transition class="bg-[#435334] w-96 h-auto rounded-b-3xl overflow-hidden" x-cloak>
+				  <p class="text-[#FAF1E4] p-4">Fjern alle applikationer, som du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte gamle apps og spil, som du har downloadet, men endnu ikke har prøvet rigtigt. Du vil ikke begynde at bruge dem senere - det er sikkert! De forbruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabyte data om måneden til opdateringer.</p>
+				
+				  <p class="text-[#FAF1E4] p-4">Glem ikke at slette eventuelle brugerkonti (inklusive e-mails) og al dens data, som du oprettede, da du var 15 og ikke har haft adgang til i et årti. Du vil øge hastigheden på din telefon og forlænge batteriets levetid - det er altid værd at have så få apps som muligt.</p>
 		
-			<p>Glem ikke at slette eventuelle brugerkonti (inklusive e-mails) og al dens data, som du oprettede, da du var 15 og ikke har haft adgang til i et årti. Du vil øge hastigheden på din telefon og forlænge batteriets levetid - det er altid værd at have så få apps som muligt.</p>
+				  <p class="text-[#FAF1E4] p-4">Gennemgå dine fotos og videoer. Ved at slette det unødvendige og duplikaterne kan du frigøre tiere af gigabyte værdifuld lagerplads. Se retningslinjerne for, hvordan du rydder op på din smartphone og tablet.</p>
+				</div>
+			  </div>
 
-			<p>Gennemgå dine fotos og videoer. Ved at slette det unødvendige og duplikaterne kan du frigøre tiere af gigabyte værdifuld lagerplads. Se retningslinjerne for, hvordan du rydder op på din smartphone og tablet.</p>
-		</div> -->
-		<div class="bg-[#435334] rounded-full box-content h-28 w-96 mt-4 lg:mt-8">
-			<h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7">TRIN 2</h2>
-			<p class="text-[#FAF1E4] grid place-content-center ">RYD OP PÅ DIN PC ELLER LAPTOP</p>
-		</div>
-		<!-- <div>
-			<p>Ryd op på din pc og slet filer, der er duplikater, eller som er blevet ubrugelige. Sorter dine fotos, slet duplikaterne og de slørede. Gennemgå videoer og slet sete eller unødvendige filer. Arkiver de vigtige filer. Vær forberedt på at finde virkelig fantastiske ting på din computer! Se retningslinjerne for, hvordan du rydder op på din computer og drev.</p>
-		</div> -->
-			</div>
-			<div>
-		<div class="bg-[#435334] rounded-full box-content h-28 w-96 mt-4 lg:mt-0 ">
-			<h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7">TRIN 3</h2>
-			<p class="text-[#FAF1E4] grid place-content-center ">RYD OP I DIN INDBAKKE</p>
-		</div>
-		<!-- <div>
-			<p>Filtrer e-mails efter de ældste og arkiver dem. AFBESTIL nyhedsbreve, som du ikke læser. Vælg lange samtaler, vælg den nyeste, og SLET alt andet. Søg efter fælles navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem som en masse. Vær modig og klik på SLET-knappen. Se retningslinjerne for, hvordan du rydder op i din indbakke!</p>
-		</div> -->
-		<div class="bg-[#435334] rounded-full box-content h-28 w-96 mt-4 lg:mt-8">
-			<h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7">TRIN 4</h2>
-			<p class="text-[#FAF1E4] grid place-content-center ">LAV NYE ARRANGEMENTER</p>
-		</div>
-		<!-- <div>
-			<p>I stedet for at sende e-mails, brug flere fælles arbejdspladser. Hold op med at sende 'ok' og 'tak' e-mails! Opbevar de vigtige filer i en sky på ét sted, så der ikke er behov for at have den samme fil i hver computer. Tænk først, før du laver en sikkerhedskopi. Skab mindre "hurtigt indhold" og vær mere bevidst om dine videoer og fotos. Sørg for kun at sikkerhedskopiere filer, som du får brug for, og fotos, som du elsker.</p>
+			  <div x-data="{ open: false }">
+				<div @click="open = !open" :class="open ? 'rounded-t-full' : 'rounded-full'" class="cursor-pointer bg-[#435334] h-28 w-96 transition-all">
+				  <h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7 glow">TRIN 2</h2>
+				  <p class="text-[#FAF1E4] grid place-content-center">RYD OP PÅ DIN PC ELLER LAPTOP</p>
+				</div>
+				<div x-show="open" x-transition class="bg-[#435334] w-96 rounded-b-3xl overflow-hidden" x-cloak>
+				  <p class="text-[#FAF1E4] p-4">Ryd op på din pc og slet filer, der er duplikater, eller som er blevet ubrugelige. Sorter dine fotos, slet duplikaterne og de slørede. Gennemgå videoer og slet sete eller unødvendige filer. Arkiver de vigtige filer. Vær forberedt på at finde virkelig fantastiske ting på din computer! Se retningslinjerne for, hvordan du rydder op på din computer og drev.</p>
+				</div>
+			  </div>
 
-			<p>Små ændringer i dine internetvaner, såsom at slukke for video under et virtuelt møde, reducere kvaliteten af streamingtjenester, mindske spilletiden, begrænse tiden på sociale medier og afmelde nyhedsbreve og e-mail-lister, kan markant reducere din miljømæssige fodaftryk!</p>
-		</div> -->
+			  <div x-data="{ open: false }">
+				<div @click="open = !open" :class="open ? 'rounded-t-full' : 'rounded-full'" class="cursor-pointer bg-[#435334] h-28 w-96 transition-all">
+				  <h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7 glow">TRIN 3</h2>
+				  <p class="text-[#FAF1E4] grid place-content-center">RYD OP I DIN INDBAKKE</p>
+				</div>
+				<div x-show="open" x-transition class="bg-[#435334] w-96 rounded-b-3xl overflow-hidden" x-cloak>
+				  <p class="text-[#FAF1E4] p-4">Filtrer e-mails efter de ældste og arkiver dem. AFBESTIL nyhedsbreve, som du ikke læser. Vælg lange samtaler, vælg den nyeste, og SLET alt andet. Søg efter fælles navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem som en masse. Vær modig og klik på SLET-knappen. Se retningslinjerne for, hvordan du rydder op i din indbakke!</p>
+				</div>
+			  </div>
+
+			  <div x-data="{ open: false }">
+				<div @click="open = !open" :class="open ? 'rounded-t-full' : 'rounded-full'" class="cursor-pointer bg-[#435334] h-28 w-96 transition-all">
+				  <h2 class="text-[#FAF1E4] font-bold grid place-content-center pt-7 glow">TRIN 4</h2>
+				  <p class="text-[#FAF1E4] grid place-content-center">LAV NYE ARRANGEMENTER</p>
+				</div>
+				<div x-show="open" x-transition class="bg-[#435334] w-96 rounded-b-3xl overflow-hidden" x-cloak>
+				  <p class="text-[#FAF1E4] p-4">I stedet for at sende e-mails, brug flere fælles arbejdspladser. Hold op med at sende 'ok' og 'tak' e-mails! Opbevar de vigtige filer i en sky på ét sted, så der ikke er behov for at have den samme fil i hver computer. Tænk først, før du laver en sikkerhedskopi. Skab mindre "hurtigt indhold" og vær mere bevidst om dine videoer og fotos. Sørg for kun at sikkerhedskopiere filer, som du får brug for, og fotos, som du elsker.</p>
+
+				  <p class="text-[#FAF1E4] p-4">Små ændringer i dine internetvaner, såsom at slukke for video under et virtuelt møde, reducere kvaliteten af streamingtjenester, mindske spilletiden, begrænse tiden på sociale medier og afmelde nyhedsbreve og e-mail-lister, kan markant reducere din miljømæssige fodaftryk!</p>
+				</div>
+				</div>
+			  </div>
 			</div>
 		</article>
 	</section>
 
 	<!-- Sektion 5 - Hvor meget er slettet? -->
-	<section class="bg-[#CEDEBD] p-4 pt-24 pb-24">
+	<section class="bg-[#CEDEBD] p-4 pt-24 pb-24 fade">
 		<div class="lg:ml-48 lg:mr-48">
 		<h1 class="text-[#CF5138] font-['Spectral'] text-4xl lg:text-5xl font-semibold uppercase">Hvordan ved jeg, hvor meget jeg har slettet?</h1>
 
@@ -250,7 +253,8 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Sektion 6 - Ryd op i mobilstorage -->
-	<section id="sektion6" class="bg-[#FAF1E4] p-4 pt-24 pb-24">
+	<section id="sektion6" class="bg-[#FAF1E4] p-4 pt-24 pb-24 fade">
+
 		<div class="lg:ml-48 lg:mr-48">
 		<h1 class="text-[#435334] font-['Spectral'] font-semibold text-3xl uppercase">Ryd op i mobilstorage</h1>
 		<div class="h-0.5 bg-[#435334] mb-10"></div>
@@ -312,7 +316,7 @@ import Button from '../components/Button.astro';
 	</section>
 
 	<!-- Formular -->
-	<form id="sektion7" class="bg-[#9EB384] pt-24 pb-24">
+	<form id="sektion7" class="bg-[#9EB384] pt-24 pb-24 fade">
 		
 <div class="ml-5 mr-5 lg:ml-48 lg:mr-48">
 	<h1 class="text-[#FAF1E4] font-['Spectral'] text-4xl lg:text-5xl font-semibold uppercase mx-auto max-w-2xl">Registrer dit digitale cleanup</h1>
@@ -361,3 +365,64 @@ import Button from '../components/Button.astro';
 	</div>
 	</form>
 </MainLayout>
+
+<!-- Animationer -->
+
+<style>
+	/* Fokus effekt */
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-22 14:2:40
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+.fokus{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+
+/* Fade effekt */
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-22 14:6:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+ .fade1{animation:fade-in 3s cubic-bezier(.39,.575,.565,1.000) 1s both}
+
+ .fade2{animation:fade-in 3s cubic-bezier(.39,.575,.565,1.000) 2s both}
+
+ .fade3{animation:fade-in 3s cubic-bezier(.39,.575,.565,1.000) 3s both}
+ 
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+
+/* Glow effekt */
+ .glow {
+	text-shadow: 0 0 10px #CEDEBD, 0 0 20px #CEDEBD, 0 0 42px #CEDEBD, 0 0 82px #CEDEBD,0 0 92px #CEDEBD;
+    color: #FAF1E4;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite;
+}
+
+
+/* Instillinger på fade js */
+ .animate__animated.animate__fadeIn {
+  /* Override the default animation duration */
+  animation-duration: 2s; /* 2 seconds */
+  /* Use a smooth timing function */
+  animation-timing-function: ease-in-out;
+}
+</style>
+
+<script>
+	import { inView } from "motion";
+
+	const fadeElements = document.querySelectorAll(".fade");
+  
+	fadeElements.forEach(fadein => {
+	  inView(fadein, () => {
+		fadein.classList.add("animate__animated", "animate__fadeIn");
+	  });
+	});
+  </script>
