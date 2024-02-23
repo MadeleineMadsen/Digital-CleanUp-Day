@@ -2,7 +2,7 @@
 import Button from '../components/Button.astro';
 ---
 <div x-data="{ showmenu: false }" class="p-6 fixed w-full z-50 bg-[#FAF1E4] text-[#435334]">
-    <div id="navbar" class="flex flex-row justify-between">
+    <div id="navbar" class="flex flex-row justify-center">
         <div id="logo" class="bg-[url('/footer_ikoner/logo.svg')] hover:bg-[url('/footer_ikoner/logo_hover.svg')] bg-cover w-[4.5rem] h-[5rem] transition duration-500 hover:opacity-95">
             <a href="#top"></a>
         </div>
@@ -29,7 +29,7 @@ import Button from '../components/Button.astro';
             <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion5">Sletning af emails</a></li>
             <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion6">Ryd op i mobilstorage</a></li>
             <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion7">Mit resultat</a></li>
-            <li> <!-- Indsæt button med text REGISTRER her --></li>
+            <li class="text-center"> <Button variant="primary" size="small">Registrer</Button></li>
         </ul>
     </nav>
 </div>
