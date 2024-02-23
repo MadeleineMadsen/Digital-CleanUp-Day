@@ -3,9 +3,9 @@ import Button from '../components/Button.astro';
 ---
 <div x-data="{ showmenu: false }" class="p-6 fixed w-full z-50 bg-[#FAF1E4] text-[#435334]">
     <div id="navbar" class="flex flex-row justify-between">
-        <div id="logo" class="bg-[url('/footer_ikoner/logo.svg')] hover:bg-[url('/footer_ikoner/logo_hover.svg')] bg-cover w-[4.5rem] h-[5rem] transition duration-500 hover:opacity-95">
-            <a href="#top"></a>
-        </div>
+        <a href="/" class="shrink-0">
+            <img class="w-20 h-20 m-4" src="/Logo-mørkgrøn.png" alt="logo"/>
+        </a>
         <nav id="desktopmenu" class="hidden lg:block">
             <ul class="flex flex-row gap-6 pt-8">
                 <li class="hover:text-[#CF5138] "><a href="#sektion1">Digital Skrald</a></li>
@@ -33,3 +33,4 @@ import Button from '../components/Button.astro';
         </ul>
     </nav>
 </div>
+
