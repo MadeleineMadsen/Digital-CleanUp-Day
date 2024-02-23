@@ -1,19 +1,44 @@
 ---
+import Button from '../components/Button.astro';
 ---
-<div class="flex flex-row justify-between items-center py-4">
-    <a href="/" class="shrink-0">
-        <img class="w-20 h-20 m-4" src="/Logo-mørkgrøn.png" alt="logo"/>
-    </a>
-    
-    <ul class="flex flex-row gap-6 justify-center flex-grow ml-20">
-        <li class="text-[#435334] font-['Spectral'] hover:text-[#A82A11]"><a href="#sektion1">Hvad er digitalt skrald?</a></li>
-        <li class="text-[#435334] font-['Spectral'] hover:text-[#A82A11]"><a href="#sektion2">Problemet</a></li>
-        <li class="text-[#435334] font-['Spectral'] hover:text-[#A82A11]"><a href="#sektion3">Vidste du det?</a></li>
-        <li class="text-[#435334] font-['Spectral'] hover:text-[#A82A11]"><a href="#sektion4">Digital CleanUp</a></li>
-        <li class="text-[#435334] font-['Spectral'] hover:text-[#A82A11]"><a href="#sektion6">Mobil Storage</a></li>
-    </ul>
+    <div x-data="{ showmenu: false }" class="p-6 fixed w-full z-50 bg-[#FAF1E4] text-[#435334]">
+        <div id="navbar" class="flex flex-row justify-between items-center">
+            
+            <a href="/" class="shrink-0">
+                <img class="w-20 h-20 m-4" src="/Logo-mørkgrøn.png" alt="logo"/>
+            </a>
+            
+            <nav id="desktopmenu" class="flex-1 ml-20">
+                <ul class="hidden lg:flex flex-row justify-center gap-6 pt-8">
+                    <li class="hover:text-[#CF5138]"><a href="#sektion1">Digital Skrald</a></li>
+                    <li class="hover:text-[#CF5138]"><a href="#sektion2">Problemet</a></li>
+                    <li class="hover:text-[#CF5138]"><a href="#sektion3">Vidste du?</a></li>
+                    <li class="hover:text-[#CF5138]"><a href="#sektion4">Digital cleanup</a></li>
+                    <li class="hover:text-[#CF5138]"><a href="#sektion5">Sletning af emails</a></li>
+                    <li class="hover:text-[#CF5138]"><a href="#sektion6">Ryd op i mobilstorage</a></li>
+                </ul>
+            </nav>
+            
+            <div class="animate-pulse hidden lg:block">
+                <button class="text-[#FAF1E4] font-['Spectral'] font-semibold text-sm bg-[#CF5138] p-4 rounded-full hover:bg-[#A82A11] uppercase">
+                    <a href="#sektion7">Registrer resultat</a>
+                </button>
+            </div>
 
-    <div class="animate-pulse">
-    <button class="text-[#FAF1E4] font-['Spectral'] font-semibold bg-[#CF5138] p-5 rounded-full m-4 hover:bg-[#A82A11]"><a href="#sektion7">Registrer resultat</a></button>
+        <button  id="burgermenu" class="lg:hidden mx-auto" x-on:click="showmenu = ! showmenu">Menu</button>
     </div>
+    <nav id="mobilmenu" class="flex flex-col content-center list-none" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <ul >
+            <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion1">Digital Skrald</a></ul></li>
+            <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion2">Problemet</a></li>
+            <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion3">'Vidste du?'</a></li>
+            <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion4">Digital cleanup</a></li>
+            <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion5">Sletning af emails</a></li>
+            <li class="hover:text-[#CF5138] text-center py-4"><a href="#sektion6">Ryd op i mobilstorage</a></li>
+            <!-- <li class="text-center"> <Button variant="primary" size="small">Registrer</Button></li> -->
+            <button class="text-[#FAF1E4] font-['Spectral'] font-semibold text-sm bg-[#CF5138] p-4 rounded-full hover:bg-[#A82A11] uppercase mx-auto animate-pulse">
+                <a href="#sektion7">Registrer resultat</a>
+            </button>
+        </ul>
+    </nav>
 </div>
